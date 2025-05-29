@@ -1,0 +1,52 @@
+# Rotate Array
+
+## Problem Description
+
+A group of n children is playing a game in which they are standing in a straight line. Each child has a hoop on the floor to stand in. There are exactly as many hoops as children, hence n in total. On their shirts, each child has a number.
+
+The game starts when the captain calls out a random number k. Each child then moves to the next hoop on their right, wrapping around to the leftmost hoop when they reach the rightmost hoop. This process is repeated k times.
+
+Your task is to simulate this game by writing the function `rotateArray`. As input, you are given the number of children n, the value of k, and an array arr containing the numbers written on the children's shirts in their original order from left to right. The function must return an array containing the new arrangement of the children after they have completed the moves.
+
+## Examples
+
+### Example 1
+**Input:**
+- n = 5
+- k = 2
+- arr = [1, 2, 3, 4, 5]
+
+**Output:** [4, 5, 1, 2, 3]
+
+**Explanation:** The value of k is 2, so each child moves 2 positions to the right in the line. The first child with number 1 moves to the position of number 3, the second child with number 2 moves to the position of number 4, and so on. The last two children with numbers 4 and 5 "go off" at the right end of the line and reappear at the left end in positions 1 and 2, respectively.
+
+### Example 2
+**Input:**
+- n = 3
+- k = 1
+- arr = [8, 9, 10]
+
+**Output:** [10, 8, 9]
+
+## Function Signature
+
+```typescript
+function rotateArray(n: number, k: number, arr: number[]): number[]
+```
+
+## Parameters
+
+- `n`: The number of children (and hoops)
+- `k`: The number of positions each child moves to the right
+- `arr`: An array containing the numbers on the children's shirts in their original order
+
+## Returns
+
+An array containing the new arrangement of the children after completing k moves to the right.
+
+## Algorithm Notes
+
+- Each move shifts all elements to the right by one position
+- Elements that "fall off" the right end wrap around to the left
+- After k moves, the array is effectively rotated k positions to the right
+- Consider optimizing for cases where k > n by using modulo operation

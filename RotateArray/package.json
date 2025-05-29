@@ -1,0 +1,17 @@
+{
+  "name": "rotate-array",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "author": "Jeison Aparicio <jeisonca96@hotmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "node --loader ts-node/esm index.ts",
+    "dev": "node --loader ts-node/esm index.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  }
+}
