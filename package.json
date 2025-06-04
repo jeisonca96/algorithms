@@ -6,8 +6,8 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "start": "node --loader ts-node/esm index.ts",
-    "dev": "node --loader ts-node/esm index.ts"
+    "rotate-array": "node --loader ts-node/esm RotateArray/index.ts",
+    "two-sum": "node --loader ts-node/esm TwoSum/index.ts"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
