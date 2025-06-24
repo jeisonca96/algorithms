@@ -8,7 +8,8 @@
   "scripts": {
     "rotate-array": "node --loader ts-node/esm RotateArray/index.ts",
     "two-sum": "node --loader ts-node/esm TwoSum/index.ts",
-    "original-digits": "node --loader ts-node/esm OriginalDigits/index.ts"
+    "original-digits": "node --loader ts-node/esm OriginalDigits/index.ts",
+    "palindrome-number": "node --loader ts-node/esm PalindromeNumber/index.ts"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
